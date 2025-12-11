@@ -1,125 +1,152 @@
 const productosISDIN = [
   {
+    nombre: "ISDINCEUTICS ESSENTIAL CLEANSING 200ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://dermashop.pe/cdn/shop/files/ISDIN-CEUTICSCLEANSING-1.png?v=1704472104&width=800", // Aquí va el link de la imagen
+    categoria: "ISDIN"
+  },
+  {
     nombre: "ISDINCEUTICS MELACLEAR ADVANCE 30ML",
-    descripcion: "Sérum despigmentante intensivo que ayuda a unificar el tono de la piel.",
-    precio: 197.4,
-    imagen: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS8djlNqLLZ-GIiEKQjZtD0ex34xBnjWOWG4Udl9LtZgo3CCTwsusMatymZ_SyQjf6iSqUEBCwJAy67mEX7jdYcPNyGt5v7RqBmWT5yxMjUTTMDUupIvVIDmMc_MmQWfz4piKXTNJfsXUQ&usqp=CAc"
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://dermashop.pe/cdn/shop/files/IsdinceuticsMelaclearAdvanced30ml..png?v=1752253537&width=800R", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "FOTOPROTECTOR ISDIN FUSION WATER MAGIC",
-    descripcion: "Protector solar facial de textura ligera y absorción inmediata.",
-    precio: 93.90,
-    imagen: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTNR9orOH4wujSx7iGKkfM4HhiQv63tONSX__U_cjSeXc2IbbS4XCIiMsysoS5Repqu4WMFhfOl3XqSgAaQ4AckKt_s56CtnH2ZEUVNQ8rRPFd32PK7_o_tnXtxQT25zzrxuOIharQ&usqp=CAc"
+    nombre: "FOTOPROTECTOR FUSION WATER MAGIC",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://www.isdin.com/sites/default/files/productos/imagenes/es_1349_th_fpfusionwatermagicspf5050ml_main_image_0_2.png?v=1730793193", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "FUSION WATER MAGIC LIGHT SPF 50 50 ML",
-    descripcion: "Protección solar con tono claro para pieles sensibles. SPF 50.",
-    precio: 103.00,
-    imagen: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRobMvVdb-u5sFHUnpSbqlm2c_ZVqgf2T6xJQSXkakhL2P7BMibe9YB2eSvzvprISgHTLulbHXjiea8PHsgvMDilmDvQv7_Cij3HUZo6g4tmzzYIzm4B-eOjHzFSemlmi5Jx5b9_6uD&usqp=CAc"
+    nombre: "FOTOPROTECTOR FUSION WATER MAGIC MEDIUM",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://www.isdin.com/sites/default/files/productos/imagenes/es_3227_th_fpfusionwatercolormediumspf5050ml_main_image_0_0_0.jpg?v=1736519769", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "FUSION WATER MAGIC MEDIUM SPF 50 50 ML",
-    descripcion: "Protección solar con tono medio, ideal para uso diario. SPF 50.",
-    precio: 103.00,
-    imagen: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcReJFqkmbWrbdQIsBafyOxY8kCwUgr1yS7rvZOCA4YlXyUJ5EuYZgRUYqT5HftWySuokDjnc6jIM9oGeueB-TXHr7Ox1eqinkmJZDOAcM_e-gNRf9x-WwTK69Nn7vu7Iadbth_d3Hf6&usqp=CAc"
+    nombre: "FOTOPROTECTOR FUSION WATER MAGIC LIGHT",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://www.isdin.com/sites/default/files/productos/imagenes/es_3976_th_fpfusionwatercolorlightspf5050ml_main_image_0_0.jpg?v=1736519220", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "ACNIBEN RX REPAIR RENOVAR LABIAL 10gr",
-    descripcion: "Bálsamo reparador labial para labios secos o agrietados por tratamientos dermatológicos.",
-    precio: 57.90,
-    imagen: "https://www.farmaciaslider.pe/my-assets/image/gallery/aa7930ed6cf87f27a47db46b5a40e2ff.jpg"
+    nombre: "FOTOPROTECTOR ISDIN PEDIATRICS LOTION SPRAY 250ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://dermotiendashopping.com/media/catalog/product/cache/153aae77a048e8d27f44ba6a0f1851f4/8/4/8429420139336.jpg", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "LIMPIADOR ISDIN ACNIBEN MATIFICANTE 200ML",
-    descripcion: "Gel limpiador facial con acción matificante ideal para piel grasa o con tendencia acneica.",
-    precio: 74.80,
-    imagen: "https://farmaciabarahona.es/4160-large_default/isdin-teen-skin-acniben-limpiador-matificante-gel-200-ml.jpg"
+    nombre: "FOTOPROTECTOR ISDIN PEDIATRICO FUSION WATER 50ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://media.falabella.com/falabellaPE/16416878/w=800,h=800,fit=pad", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "TEEN SKIN ACNIBEN BODY 150ml",
-    descripcion: "Spray corporal para el cuidado de la piel con tendencia acneica en espalda, pecho y hombros.",
-    precio: 84.90,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKw7REY7kFjejRnanRgnxu1l9Jmtl_2pEXg&s"
+    nombre: "ACNIBEN LIMPIADOR MATIFICANTE 200ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://vider.com.pe/public/img/products/prd_wc67a2b05cdc9b8.jpg", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "TEEN SKIN ACNIBEN MASCARILLA FACIAL PURIFICANTE 75ML",
-    descripcion: "Mascarilla purificante que ayuda a eliminar impurezas y controlar el exceso de sebo.",
-    precio: 79.90,
-    imagen: "https://www.farmacialeloir.com.ar/img/articulos/2023/07/acniben_teen_skin_mascarilla_facial_purificante_imagen1.jpg"
+    nombre: "ACNIBEN BODY 150ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://ibella.pe/cdn/shop/files/ISDIN-ACNE-TEENSKINACNIBENBODY-150ML.png?v=1694720563", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "TEEN SKIN ACNIBEN NIGHT CONCENTRATE ANTI-IMPERFECCIONES 27ML",
-    descripcion: "Concentrado facial nocturno que combate las imperfecciones y mejora la textura de la piel.",
-    precio: 104.90,
-    imagen: "https://statics.promofarma.com/static/promofarma/prod/product_images/mpdp/L7WCLP2W_es_ES_8.jpeg"
+    nombre: "ACNIBEN BÁLSAMO RENOVADOR LABIAL 10gr",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://dermashop.pe/cdn/shop/files/1001580.jpg?v=1704465122&width=1500", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   },
   {
-    nombre: "ACNIBEN EXFOLIANT 100ML",
-    descripcion: "Gel exfoliante para una limpieza profunda que ayuda a renovar la piel y prevenir imperfecciones.",
-    precio: 79.90,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs69JHlzk9kyYSIo4WOT04kxduKa1fwUKc0g&s"
+    nombre: "ACNIBEN NIGHT CONCENTRATE ANTI-IMPERFECCIONES 27ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://farmaclickperu.com/wp-content/uploads/2024/07/IIII.webp", // Aquí va el link de la imagen
+    categoria: "ISDIN"
+  },
+  {
+    nombre: "ACNIBEN MASCARILLA FACIAL PURIFICANTE 75ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://dermashop.pe/cdn/shop/files/Acnibenmascarillapurificante.png?v=1718922328&width=1000", // Aquí va el link de la imagen
+    categoria: "ISDIN"
   }
 ];
 
 const productosBIODERMA = [
-  {
-    nombre: "SEBIUM SERUM",
-    descripcion: "Sérum exfoliante suave para piel grasa con imperfecciones persistentes.",
-    precio: 144.90,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf02x2bfEdzlZb7OXjztuQ1-BhJ3cbj0O6Sg&s"
-  },
-  {
-    nombre: "PHOTODERM DRY TOUCH SUN ACTIVE DEFENSE",
-    descripcion: "Protector solar toque seco, ideal para piel mixta o grasa. Alta protección.",
-    precio: 109.50,
-    imagen: "https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/073957L.jpg"
-  },
-  {
+ {
     nombre: "SEBIUM GEL MOUSSANT 200ML",
-    descripcion: "Gel limpiador purificante para piel mixta a grasa.",
-    precio: 95.4,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYgDkxdlDoDoJY2dasEM9gZMHgAIv8pBHIA&s"
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 95.40</strong>`,
+    precio: 95.40,
+    imagen: "https://vider.com.pe/public/img/products/prd_wc5e40971035d00.png", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
-    nombre: "SEBIUM GEL MOUSSANT ACTIF 200ML",
-    descripcion: "Gel limpiador activo con acción purificante intensiva.",
+    nombre: "SEBIUM MOUSSANT ACTIF 200ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 96.90</strong>`,
     precio: 96.90,
-    imagen: "https://static.beautytocare.com/media/catalog/product/b/i/bioderma-sebium-gel-moussant-actif-cleansing-active-foaming-gel-200ml.jpg"
-  },
-  {
-    nombre: "SEBIUM GEL GOMMANT 100ML",
-    descripcion: "Exfoliante facial para piel grasa, elimina impurezas y células muertas.",
-    precio: 77.90,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2A6wc6sHE5J7pYmPZpiY2eOWNMI_orfXSQ&s"
+    imagen: "https://dermashop.pe/cdn/shop/files/1-gel-moussant-actif.jpg?v=1727300182&width=1000", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
     nombre: "SEBIUM HYDRA 40ML",
-    descripcion: "Hidratante calmante para piel grasa debilitada por tratamientos dermatológicos.",
+    descripcion: `<del>S/ 89.90</del> <strong>S/ 85.40</strong>`,
     precio: 85.40,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAuD8JzWrzeYLyG7lB-5fd2MX2tq69fI_yg&s"
+    imagen: "https://www.bioderma.pe/sites/pe/files/styles/fancybox_2000_2000/public/products/%7B151387%7D_%7B%7D_%7B28612I%7D.jpg?itok=3-jz8wTq", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
-    nombre: "SEBIUM MAT CONTROL 30 ML",
-    descripcion: "Controla el brillo, hidrata y matifica la piel durante 8 horas.",
-    precio: 96.90,
-    imagen: "https://dermashop.pe/cdn/shop/files/0-MatControl_grande.jpg?v=1727299404"
+    nombre: "SEBIUM MAT CONTROL 30ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 89.80</strong>`,
+    precio: 89.80,
+    imagen: "https://dermashop.pe/cdn/shop/files/0-MatControl.jpg?v=1727299404&width=1000", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
+  },
+  {
+    nombre: "SEBIUM GEL GOMMANT 100ML",
+    descripcion: `<del>S/ 85.90</del> <strong>S/ 81.90</strong>`,
+    precio: 81.90,
+    imagen: "https://vider.com.pe/public/img/products/prd_wc618ee2f60df9f.jpeg", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
+  },
+  {
+    nombre: "SEBIUM SERUM",
+    descripcion: `<del>S/ 189.90</del> <strong>S/ 136.70</strong>`,
+    precio: 136.70,
+    imagen: "https://www.bioderma.pe/sites/pe/files/styles/fancybox_2000_2000/public/products/Packshot__Sebium-serum-F30ml-28600-MAD-july23.jpg?itok=P7j-KyRN", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
     nombre: "SEBIUM KERATO+",
-    descripcion: "Tratamiento intensivo para imperfecciones persistentes, reduce marcas.",
-    precio: 104.30,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2TAW9nMKIth0WLqsejaCACLKOglg0cIDlg&s"
+    descripcion: `<del>S/ 115.90</del> <strong>S/ 108.90</strong>`,
+    precio: 108.90,
+    imagen: "https://www.bioderma.pe/sites/pe/files/styles/fancybox_2000_2000/public/products/%7B151390%7D_%7B%7D_%7B28675%7D.jpg?itok=6EvFJhGb", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
     nombre: "SENSIBIO DEFENSIVE SERUM 40ML",
-    descripcion: "Fortalece la piel sensible y la protege del estrés oxidativo diario.",
+    descripcion: `<del>S/ 189.90</del> <strong>S/ 175.20</strong>`,
     precio: 175.20,
-    imagen: "https://wongfood.vtexassets.com/arquivos/ids/629994/S-rum-Bioderma-Sensibio-Defensive-30ml-1-351648223.jpg?v=638181494482430000"
+    imagen: "https://www.bioderma.pe/sites/pe/files/styles/product_packshot_slider/public/products/%7B151399%7D_%7B%7D_%7B28738%7D.jpg?itok=LdYQyrPE", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
   },
   {
-    nombre: "SENSIBIO GEL MOUSSANT 200 ML",
-    descripcion: "Gel limpiador suave, ideal para piel sensible e intolerante.",
-    precio: 96.90,
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGAlXZiYwarwCbwaZiRkjgDhv12THIsiI8wg&s"
-  }
+    nombre: "SENSIBIO GEL MOUSSANT 200ML",
+    descripcion: `<del>S/ 99.90</del> <strong>S/ 81.50</strong>`,
+    precio: 81.50,
+    imagen: "https://www.bioderma.pe/sites/pe/files/styles/product_packshot_slider/public/products/%7B157474%7D_%7B%7D_%7B28727%7D.jpg?itok=2xMdMCbn", // Aquí va el link de la imagen
+    categoria: "BIODERMA"
+  },
 ];

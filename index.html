@@ -2,8 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Derma Expert</title>
+  <!-- FONT AWESOME para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-VlZ0CSMN0vDEOqlsT0y5p2P3Z12LgL8T+vczJ5RMTB1EKkdRp7AlZsuzXpSePjTo5RmuvkKeWYlzYEr3nWl5mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -17,26 +19,29 @@
       background-color: #FFE4E1;
       color: #333;
       padding: 1rem 2rem;
-      position: relative;
-    }
-
-    .logo-header {
       display: flex;
       align-items: center;
-      position: relative;
+      justify-content: space-between;
     }
 
     .logo-header img {
-      height: 100px;
+      height: 80px;
       width: auto;
     }
 
-    .logo-header h1 {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
+    .titulo-header {
+      flex-grow: 1;
+      text-align: center;
       font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
 
     .productos {
@@ -47,11 +52,11 @@
     }
 
     .producto {
+      background: #fff;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 1rem;
       text-align: center;
-      background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -62,25 +67,15 @@
       margin-bottom: 0.5rem;
     }
 
-    .producto h3 {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
-    }
-
-    .producto p {
-      margin: 0.5rem 0;
-    }
-
     .precio {
       font-weight: bold;
       color: #E91E63;
     }
 
     .producto button {
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
       background-color: #4CAF50;
       color: white;
+      padding: 0.5rem 1rem;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -92,55 +87,94 @@
 
     .carrito {
       padding: 1rem;
-      background: #f9f9f9;
+      background: #f9f2f2;
       border-top: 2px solid #ccc;
       margin-top: 2rem;
     }
 
-    .carrito h2 {
+    .comentarios {
+      background: #fff;
+      padding: 2rem;
+      margin: 2rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .comentarios h2 {
       margin-bottom: 1rem;
+      color: #007b83;
     }
 
-    #lista-carrito {
-      list-style: none;
-      padding: 0;
+    #lista-comentarios .comentario {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
     }
 
-    #lista-carrito li {
-      margin-bottom: 0.5rem;
+    .comentario .email {
+      font-weight: bold;
+      color: #007b83;
     }
 
-    #finalizar {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #2196F3;
+    textarea, input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button#btn-comentar {
+      background-color: #007b83;
       color: white;
+      padding: 0.5rem 1rem;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
     }
 
-    #finalizar:hover {
-      background-color: #1976D2;
+    button#btn-comentar:hover {
+      background-color: #005f65;
     }
 
-    @media (min-width: 768px) {
-      main {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-      }
+    .beneficios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      background: #E0F7FA;
+      text-align: center;
+    }
 
-      .productos {
-        flex: 3;
-      }
+    .beneficio span {
+      font-size: 2rem;
+    }
 
-      .carrito {
-        flex: 1;
-        position: sticky;
-        top: 1rem;
-        height: fit-content;
-      }
+    .beneficio h3 {
+      margin: 0.5rem 0;
+      color: #007b83;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer a {
+      color: #00BFFF;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .iconos-sociales img {
+      width: 32px;
+      margin: 0 0.5rem;
+    }
+
+    .nombre-footer {
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -148,25 +182,117 @@
   <header>
     <div class="logo-header">
       <img src="logo.jpeg" alt="Logo Derma Expert">
-      <h1>Derma Expert</h1>
     </div>
+    <div class="titulo-header">Derma Expert</div>
   </header>
+<nav class="barra-navegacion">
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="opciones-menu" class="menu-opciones">
+    <li class="opcion activa"><a href="productos.html">🧴 Productos</a></li>
+  </ul>
+</nav>
+</header>
+
+  <div class="banner">
+    Envíos a todo el Perú 
+  </div>
 
   <main>
     <section id="productos" class="productos">
-      <!-- Los productos se cargarán desde JS -->
+      <!-- Carga dinámica desde JS -->
     </section>
 
-    <aside class="carrito" id="carrito">
-      <h2>Carrito</h2>
-      <ul id="lista-carrito"></ul>
-      <p>Total: S/ <span id="total">0.00</span></p>
-      <button id="finalizar">Finalizar compra</button>
-    </aside>
   </main>
 
+ <!-- Botón flotante del carrito -->
+<div id="carrito-flotante" class="carrito-flotante">
+  <button id="btn-carrito" class="boton-carrito">
+    🛒<span id="cantidad-carrito">0</span>
+  </button>
+  <div id="panel-carrito" class="panel-carrito oculto">
+    <h3>Carrito de compras</h3>
+    <ul id="lista-carrito"></ul>
+    <p>Total: S/ <span id="total">0.00</span></p>
+    <button id="finalizar">Finalizar compra</button>
+  </div>
+</div>
+<div class="buscador-productos">
+  <input type="text" id="busqueda" placeholder="Buscar producto...">
+  <button id="btn-buscar">🔍</button>
+</div>
+
+  <section class="comentarios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div id="lista-comentarios"></div>
+    <input type="email" id="email-comentario" placeholder="Tu correo Gmail" required>
+    <textarea id="mensaje-comentario" placeholder="Escribe tu comentario" required></textarea>
+    <button id="btn-comentar">Enviar comentario</button>
+  </section>
+
+  <section class="beneficios">
+    <div class="beneficio">
+      <span>📦</span>
+      <h3>Envío a todo el Perú</h3>
+      <p>Llevamos tus productos a tu casa</p>
+    </div>
+    <div class="beneficio">
+      <span>🔒</span>
+      <h3>Compras Seguras</h3>
+      <p>Tus compras son 100% protegidas</p>
+    </div>
+    <div class="beneficio">
+      <span>⭐</span>
+      <h3>Alta Calidad</h3>
+      <p>Trabajamos con las mejores marcas</p>
+    </div>
+    <div class="beneficio">
+      <span>🔁</span>
+      <h3>Cambios y devoluciones</h3>
+      <p>Te ayudamos en lo que necesites</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="iconos-sociales">
+      <a href="https://wa.me/51989348081" target="_blank" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/dra.aliamaya?igsh=MWYyNHB2bnhicWRkaw==" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/share/1FJ3kuJdjK/" target="_blank" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      </a>
+    </div>
+    <p class="nombre-footer">Dr. Alicia Amaya · Dermatóloga</p>
+  </footer>
+
+  <footer>
+    <p>&copy; 2025 Derma Expert</p>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <a href="mailto:contacto@dermaexpert.com">Contáctanos</a>
+  </footer>
+
+ <script>
+  document.getElementById("btn-comentar").addEventListener("click", () => {
+    const email = document.getElementById("email-comentario").value;
+    const mensaje = document.getElementById("mensaje-comentario").value;
+    if (email && mensaje) {
+      const div = document.createElement("div");
+      div.className = "comentario";
+      div.innerHTML = `<p class="email">${email}</p><p>${mensaje}</p>`;
+      document.getElementById("lista-comentarios").prepend(div);
+      document.getElementById("email-comentario").value = "";
+      document.getElementById("mensaje-comentario").value = "";
+    }
+  });
+</script>
+
   <script src="productos.js"></script>
-  <script src="app.js"></script>
   <script src="script.js"></script>
+<div id="notificacion-carrito" class="notificacion-carrito oculto">
+  ✅ Producto agregado al carrito
+</div>
+
 </body>
 </html>
